@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="../css/acerca_de.css">
+
+    <!-- Tipografia -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <title>NaMaE | Acerca de</title>
+</head>
+
+<body>
+    <header>
+        <nav class="contenedorMenu">
+            <div class="logo">
+                <img src="../img/menu/logo_namae.png" alt="">
+            </div>
+            <div class="enlaces">
+                <a href="../html/inicio.html">Inicio</a>
+                <a href="../html/covid19.html">COVID-19</a>
+                <a href="../html/productos.html">Productos</a>
+                <a href="../html/blog.html">Blog</a>
+                <a href="../html/acerca_de.html">Acerca de</a>
+            </div>
+            <div class="hamburguesa">
+                <img src="../img/menu/menuhamburguesa.png" alt="" id="hamburguesa">
+            </div>
+        </nav>
+
+        <!-- Javascript Menu -->
+        <script src="../javascript/menu.js"></script>
+
+    </header>
+
+    <!-- Contendido principal -->
+    <main>
+        <section class="contenedor">
+            <h2 class="titulo">NaMaE</h2>
+
+            <div class="contenedor-articulo">
+                <img src="../img/menu/logo_namae.png" alt="" class="imagen-articulo">
+
+                <div class="contenido-textos">
+                    <h3><span>¿?</span>¿Qué es NaMaE?</h3>
+                    <p>
+                        NaMaE es un proyecto dedicado a la aplicación de los conocimientos adquiridos durante
+                        el desarrollo de la materia Diseño Web de la carrera ingeniería en sistemas computacionales
+                        de la universidad de sonsonate.
+                    
+                        El objetivo fue poner en evidencia el esfuerzo y dedicación puesto por los integrantes del grupo
+                        para lograr la creación de un sitio que mostrara las habilidades desarrolladas en HTML5, CSS3 y
+                        Javascript. En gran parte del sitio se ulilizo CSS Flexbox, media queries para poder dar un
+                        diseño responsivo que asi sea adaptable también a dispositivos moviles.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slider -->
+        <section class="slide-contenedor">
+
+            <div class="miSlider fade">
+                <img src="../img/acerca_de/1Slide.jpg" alt="">
+            </div>
+            <div class="miSlider fade">
+                <img src="../img/acerca_de/2Slide.jpg" alt="">
+            </div>
+            <div class="miSlider fade">
+                <img src="../img/acerca_de/3Slide.jpg" alt="">
+            </div>
+            <div class="miSlider fade">
+                <img src="../img/acerca_de/4Slide.jpg" alt="">
+            </div>
+            <div class="miSlider fade">
+                <img src="../img/acerca_de/5Slide.jpg" alt="">
+            </div>
+            <div class="miSlider fade">
+                <img src="../img/acerca_de/6Slide.jpg" alt="">
+            </div>
+
+
+            <div class="direcciones">
+                <a href="#" class="atras" onclick="avanzaSlide(-1)">&#10094;</a>
+                <a href="#" class="adelante" onclick="avanzaSlide(1)">&#10095;</a>
+            </div>
+
+            <div class="barras">
+                <span class="barra activo" onclick="posicionSlide(1)"></span>
+                <span class="barra" onclick="posicionSlide(2)"></span>
+                <span class="barra" onclick="posicionSlide(3)"></span>
+                <span class="barra" onclick="posicionSlide(4)"></span>
+                <span class="barra" onclick="posicionSlide(5)"></span>
+                <span class="barra" onclick="posicionSlide(6)"></span>
+            </div>
+        </section>
+        <br><br>
+        <!-- Slider -->
+        <script src="../javascript/slider.js"></script>
+    </main>
+
+    <footer>
+
+        <div class="contenedor-footer">
+
+            <div class="content-foo">
+                <h4>Telefono</h4>
+                <p>2220-1244</p>
+            </div>
+
+            <div class="content-foo">
+                <h4>Email</h4>
+                <p>namaefarmacia@gmail.com</p>
+            </div>
+
+            <div class="content-foo">
+                <h4>Localizacion</h4>
+                <p>Sonsonate</p>
+            </div>
+
+        </div>
+
+        <h2 class="titulo-final">&copy; Farmacia NaMaE</h2>
+
+    </footer>
+
+
+</body>
+
+</html>
